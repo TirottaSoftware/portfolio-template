@@ -20,6 +20,12 @@
     .hero-container .hero-right{
         right: 5%;   
     }
+    .hero-bottom .stats-container{
+        width: 50%;
+    }
+    .hero-bottom .stats-container .hero-stats .stats-number{
+        font-size: 2.5rem;
+    }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){
     .nav-links ul li{
@@ -41,6 +47,12 @@
     .hero-container .hero-text #position{
         font-size: 1.5rem;
     }
+    .hero-bottom .stats-container{
+        width: 50%;
+    }
+    .hero-bottom .stats-container .hero-stats .stats-number{
+        font-size: 2rem;
+    }
 }
 
 /* Tablet: 768px. */
@@ -59,11 +71,12 @@
         width: 95%;
     }
     .hero-container{
-        height: 70%;
+        height: 60%;
     }
     .hero-container .hero-text{
         display: flex;
         flex-flow: column;
+        text-align: center;
         align-items: center;
     }
     .hero-container .hero-text #name{
@@ -82,5 +95,29 @@
     }
     .hero-container .hero-right{
         display: none;
+    }
+    .hero-bottom .stats-container{
+        width: 60%;
+    }
+    .hero-bottom .stats-container .hero-stats .stats-number{
+        font-size: 1.75rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .hero-bottom .stats-container{
+        width: 100%;
+        box-shadow: unset;
+        border-radius: 0;
+        background: #efefef;
+        top: unset;
+        flex-flow: column;
+        height: auto;
+        justify-content: space-between;
+    }
+    .hero-bottom .stats-container .hero-stats{
+        margin: 5% 10%;
+    }
+    .hero-bottom .stats-container .hero-stats .stats-number{
+        font-size: 1.75rem;
     }
 }
