@@ -26,6 +26,15 @@
     .hero-bottom .stats-container .hero-stats .stats-number{
         font-size: 2.5rem;
     }
+    .about-container{
+        width: 80%;
+    }
+    .about-container .about-content #about-name{
+        font-size: 2.5rem;
+    }
+    .about-container .about-content #about-position{
+        font-size: 1.25rem;
+    }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){
     .nav-links ul li{
@@ -52,6 +61,19 @@
     }
     .hero-bottom .stats-container .hero-stats .stats-number{
         font-size: 2rem;
+    }
+    .about-container{
+        width: 90%;
+    }
+    .about-container .about-content #about-name{
+        font-size: 2rem;
+    }
+    .about-container .about-content #about-position{
+        font-size: 1.25rem;
+    }
+    .about-container .about-content p{
+        margin: 2.5% 0;
+        font-size: 1rem;
     }
 }
 
@@ -102,6 +124,27 @@
     .hero-bottom .stats-container .hero-stats .stats-number{
         font-size: 1.75rem;
     }
+    .about-container{
+        flex-flow: column;
+        align-items: center;
+    }
+    .about-container .img-wrapper{
+        width: 50%;
+        margin-bottom: 15%;
+        margin: auto;
+        border: 10px solid var(--color-accent);
+    }
+    .about-container .img-wrapper::before{
+        display: none;
+    }
+    .about-container .img-wrapper img{
+        width: 100%;
+    }
+    .about-container .about-content{
+        margin-top: 10%;
+        margin-left: 0;
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 768px) {
     .hero-bottom .stats-container{
@@ -113,11 +156,15 @@
         flex-flow: column;
         height: auto;
         justify-content: space-between;
+        margin-bottom: 10%;
     }
     .hero-bottom .stats-container .hero-stats{
         margin: 5% 10%;
     }
     .hero-bottom .stats-container .hero-stats .stats-number{
         font-size: 1.75rem;
+    }
+    .about-container{
+        width: 95%;
     }
 }
