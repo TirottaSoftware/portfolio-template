@@ -1,0 +1,33 @@
+
+/* Medium Screens: 1200px */
+
+@media screen and (min-width: 1200px) and (max-width: 1365px){
+    .navbar-container{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px){
+    .nav-links ul li{
+        font-size: 0.9rem;
+    }
+    .navbar-container{
+        width: 90%;
+    }
+}
+
+/* Tablet: 768px. */
+
+@media only screen and (max-width: 991px) {
+    .nav-links ul{
+        display: none;
+    }
+    .sidebar-active{
+        opacity: 1;
+    }
+    .burger-menu{
+        display: block;
+    }
+    .navbar-container{
+        width: 95%;
+    }
+}
