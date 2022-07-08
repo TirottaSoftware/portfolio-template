@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,6 +18,10 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -30,6 +36,7 @@ ul {
     z-index: 5;
 }
 .navbar-container{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,38 +66,48 @@ ul {
 .nav-links ul li a:hover{
     color: var(--color-accent);
 }
-
-.burger-menu{
-    position: relative;
-    display: none;
-}
 .burger{
+    position: fixed;
+    display: none;
+    right: 5%;
+    z-index: 2;
     width: 40px;
     height: 40px;
-    border-radius: 5px;
-    background: var(--color-text);
+    border-radius: 50%;
+    background: var(--color-accent);
     cursor: pointer;
+    z-index: 51;
+}
+.icon-burger{
+    width: 65%;
+    height: 65%;
+    margin: 17.5%;
+    color: white;
 }
 .sidebar{
-    padding: 25px;
-    background: var(--color-text);
-    position: absolute;
+    padding: 25px 0;
+    background: var(--color-accent);
+    position: fixed;
     top: calc(100% + 10px);
-    top: 100%;
+    width: 60%;
+    top: 0;
+    height: 100vh;
+    z-index: 50;
     right: 0;
-    transition: .5s ease-in-out;
-    opacity: 0;
+    display: none; 
+    transform: translateX(100%);
 }
 .sidebar-links{
+    margin-top: 15%;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-end;
+    text-align: end;
 }
 .sidebar-links ul li{
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-transform: uppercase;
     margin: 25px;
 }
@@ -98,7 +115,7 @@ ul {
     color: var(--color-primary);
 }
 .sidebar-links ul li a:hover{
-    color: var(--color-accent);
+    color: var(--color-secondary);
 }
 
 /* Hero Section */
@@ -181,7 +198,6 @@ ul {
 .hero-bottom{
     width: 100%;
     display: flex;
-    z-index: 4;
     justify-content: center;
 }
 .hero-bottom .stats-container{
@@ -211,7 +227,6 @@ ul {
 /* Section Title */
 
 .section-container{
-    z-index: 9;
     font-family: var(--font-primary);
     width: 40%;
     margin: 5% auto;
@@ -257,8 +272,8 @@ ul {
 }
 .about-container .img-wrapper::before{
     position: absolute;
-    left:10px;
-    top: 10px;
+    left:25px;
+    top: 25px;
     width: 100%;
     height: 100%;
     background: transparent;
@@ -395,9 +410,6 @@ ul {
     letter-spacing: 1px;
     margin-bottom: 5px;
 }
-.testimonials-container .testimonials-slider .testimonials-slide label{
-
-}
 .slick-dots{
     display: flex;
     justify-content: center;
@@ -420,8 +432,9 @@ ul {
 /* Twitter Section */
 
 #twitter{
-    padding: 10% 0;
+    padding-top: 10%;
     background: #f4f4f4;
+    margin-bottom: 10%;
 }
 .twitter-container{
     background-image: url('../img/Twitter-Banner.jpg');
@@ -478,4 +491,83 @@ ul {
     transition: all .25s ease-in-out;
     background: white;
     color: #1D9BF0;
+}
+
+/* Contact Section */
+
+.contact-container{
+    font-family: var(--font-primary);
+    padding-bottom: 5%;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+}
+
+.contact-container .contact-card{
+    width: 30%;
+    margin: 0 calc(2.5% -6px);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 300px;
+    justify-content: space-between;
+}
+.contact-container .contact-card h3{
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+}
+.contact-container .contact-card p{
+    text-align: center;
+    width: 80%;
+    margin-bottom: 10%;
+}
+.contact-container .contact-card .contact-cta{
+    border: 1px solid var(--color-accent);
+    padding: 20px 50px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-accent);
+}
+.contact-container .contact-card .contact-cta:hover{
+    transition: all 0.25s ease-in-out;
+    background: var(--color-accent);
+    color: white;
+}
+.icon-contact{
+    width: 100px;
+    height: 100px;
+    margin: 5% 0;
+}
+#icon-contact-email{
+    color: black;
+}
+#icon-contact-twitter{
+    color: #1D9BF0;
+}
+#icon-contact-whatsapp{
+    color: #25D366;
+}
+
+.btn-backtotop{
+    width: 20px;
+    height: 20px;
+    background: var(--color-accent);
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    cursor: pointer;
+    z-index: 99;
+    display: none;
+}
+.btn-visible{
+    display: block;
 }

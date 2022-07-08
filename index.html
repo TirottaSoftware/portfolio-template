@@ -28,6 +28,7 @@
     />
   </head>
   <body>
+    <ion-icon class="btn-backtotop" name="arrow-up-outline"></ion-icon>
     <nav class="navbar">
       <div class="navbar-container">
         <a href="#" class="logo">
@@ -52,29 +53,29 @@
             </li>
           </ul>
         </div>
-        <div class="burger-menu">
-          <div class="burger"></div>
-          <div class="sidebar">
-            <div class="sidebar-links">
-              <ul>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">About</a>
-                </li>
-                <li>
-                  <a href="#">Services</a>
-                </li>
-                <li>
-                  <a href="#">Testimonials</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div class="burger">
+          <ion-icon class="icon-burger" name="grid-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="sidebar-links">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Testimonials</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -249,6 +250,59 @@
         </div>
       </div>
     </section>
+    <section id="contact">
+      <div class="section-container">
+        <h3 class="section-subtitle">Contact</h3>
+        <h1 class="section-title">
+          Get <span class="section-span">In Touch</span>
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
+          molestiae non numquam, quibusdam tenetur consequatur nihil, totam aut
+          autem quidem animi nemo a placeat ducimus?
+        </p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-card">
+          <ion-icon
+            id="icon-contact-email"
+            class="icon-contact"
+            name="mail-outline"
+          ></ion-icon>
+          <h3>Email</h3>
+          <p>
+            Don't hesitate to send me an email for any business-related
+            inquiries.
+          </p>
+          <a href="" class="contact-cta">Send Email</a>
+        </div>
+        <div class="contact-card">
+          <ion-icon
+            id="icon-contact-twitter"
+            class="icon-contact"
+            name="logo-twitter"
+          ></ion-icon>
+          <h3>Twitter</h3>
+          <p>
+            Make sure to follow me on Twitter, so you don't miss on daily value.
+          </p>
+          <a href="" class="contact-cta">Follow Me</a>
+        </div>
+        <div class="contact-card">
+          <ion-icon
+            id="icon-contact-whatsapp"
+            class="icon-contact"
+            name="logo-whatsapp"
+          ></ion-icon>
+          <h3>WhatsApp</h3>
+          <p>
+            Call or Text me on WhatsApp. I'd be happy to help you with whatever
+            I can.
+          </p>
+          <a href="" class="contact-cta">Call Me</a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
 
@@ -268,3 +322,4 @@
 ></script>
 <script src="./assets/js/burger.js"></script>
 <script src="./assets/js/jquery-slider.js"></script>
+<script src="./assets/js/backToTop.js"></script>
