@@ -163,7 +163,7 @@
     }
     .about-container .img-wrapper{
         width: 50%;
-        max-width: 50%;
+        max-width: 100%;
         margin-bottom: 15%;
         margin: auto;
         border: 10px solid var(--color-accent);
