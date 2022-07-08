@@ -35,6 +35,9 @@
     .about-container .about-content #about-position{
         font-size: 1.25rem;
     }
+    .twitter-container .twitter-content{
+        width: 40%;
+    }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px){
     .nav-links ul li{
@@ -77,6 +80,9 @@
     }
     .testimonials-container .testimonials-slider .testimonials-slide p{
         width: 90%;
+    }
+    .twitter-container .twitter-content{
+        width: 50%;
     }
 }
 
@@ -150,6 +156,24 @@
     }
     .testimonials-container .testimonials-slider .testimonials-slide p{
         width: 90%;
+    }
+    
+    .twitter-container{
+        background-position: right;
+    }
+    .container-darken{
+        display: block;
+    }    
+    .twitter-container .twitter-content{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .twitter-container .twitter-content p{
+        margin: 20px auto;
+    }
+    .twitter-container .twitter-content a{
+        margin: 0 auto;
     }
 }
 @media only screen and (max-width: 768px) {
