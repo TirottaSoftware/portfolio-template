@@ -194,12 +194,13 @@
         display: block;
     }    
     .twitter-container .twitter-content{
-        width: 60%;
+        width: 75%;
         margin: 0 auto;
         text-align: center;
     }
     .twitter-container .twitter-content p{
         margin: 20px auto;
+        width: 100%;
     }
     .twitter-container .twitter-content a{
         margin: 0 auto;
