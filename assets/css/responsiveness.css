@@ -15,6 +15,9 @@
     .navbar-container{
         width: 80%;
     }
+    .hero-container .hero-text .dynamic-text-list{
+        width: 40%;
+    }
     .hero-container .hero-text .cta-container{
         width: 40%;
     }
@@ -51,6 +54,9 @@
     .navbar-container{
         width: 90%;
     }
+    .hero-container .hero-text .dynamic-text-list{
+        width: 40%;
+    }
     .hero-container .hero-text .cta-container{
         width: 55%;
         max-width: 100%;
@@ -62,7 +68,7 @@
     .hero-container .hero-text #name{
         font-size: 3.5rem;
     }
-    .hero-container .hero-text #position{
+    .hero-container .hero-text .dynamic-text-list #position{
         font-size: 1.5rem;
     }
     .hero-bottom .stats-container{
@@ -128,7 +134,7 @@
     .hero-container .hero-text #name{
         font-size: 3rem;
     }
-    .hero-container .hero-text #position{
+    .hero-container .hero-text .dynamic-text-list #position{
         font-size: 1.25rem;
     }
     .hero-container .hero-text .cta-container{
@@ -147,6 +153,9 @@
     }
     .hero-bottom .stats-container .hero-stats .stats-number{
         font-size: 1.75rem;
+    }
+    .hero-container .hero-text .dynamic-text-list {
+        width: 40%;
     }
     .about-container{
         flex-flow: column;
@@ -218,6 +227,9 @@
     }
     .hero-bottom .stats-container .hero-stats .stats-number{
         font-size: 1.75rem;
+    }
+    .hero-container .hero-text .dynamic-text-list {
+        width: 90%;
     }
     .about-container{
         width: 95%;
