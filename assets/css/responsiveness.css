@@ -173,6 +173,7 @@
     }
     .about-container .img-wrapper img{
         width: 100%;
+        height: auto !important;
     }
     .about-container .about-content{
         margin-top: 10%;
