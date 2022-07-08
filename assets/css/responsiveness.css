@@ -6,7 +6,8 @@
         width: 35%;
     }
     .hero-container .hero-right{
-     right: 10%;   
+        top: 30px;
+        right: -10%;   
     }
 }
 
@@ -18,7 +19,8 @@
         width: 40%;
     }
     .hero-container .hero-right{
-        right: 5%;   
+        top: 50px;
+        right: -20%;   
     }
     .hero-bottom .stats-container{
         width: 50%;
@@ -51,7 +53,8 @@
         max-width: 100%;
     }
     .hero-container .hero-right{
-        right: 0;
+        right: -25%;
+        top: 100px;
     }
     .hero-container .hero-text #name{
         font-size: 3.5rem;
