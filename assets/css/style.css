@@ -365,6 +365,9 @@ ul {
 .services-container .service-card{
     border: 1px solid #646464;
     margin: 1% 0;
+display: flex;
+flex-flow: column;
+text-align: center;
     align-items: center;
     /* border-radius: 10px; */
     justify-content: center;
@@ -413,6 +416,9 @@ ul {
     position: relative;
     padding: 50px;
     text-align: center;
+display: flex;
+flex-flow: column;
+text-align: center;
     cursor: grab;
     height: unset;
     margin: 1% 0;
